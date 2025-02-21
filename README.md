@@ -31,5 +31,7 @@ Tidak ada yang berubah sebenarnya object blueship menjadi lebih berat tetapi kar
 Jika **Disabled** diaktifkan, StonePlatform tidak akan memiliki deteksi tabrakan, sehingga objek pesawat dapat melewatinya tanpa terhalang.
 
 ### Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?
+Memanipulasi Position, Rotation, dan Scale pada BlueShip akan mengubah lokasi, orientasi, dan ukuran visualnya di Viewport.
 
 ### Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?
+Posisi StonePlatform dan StonePlatform2 di Inspector terlihat tidak sesuai karena mereka adalah child dari PlatformBlue, sehingga posisinya relatif terhadap parent, bukan terhadap scene utama. Jika PlatformBlue dipindahkan, maka childnya juga ikut beripindah, tetapi ketika child nya dipindah sendiri PlatformBlue tidak ikut berpindah.
