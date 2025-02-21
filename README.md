@@ -25,6 +25,7 @@ Sprite digunakan untuk menampilkan gambar (texture) dalam game. Node ini memungk
 - **StaticBody2D**: Digunakan untuk objek statis yang tidak bergerak. Objek ini bisa bertabrakan dengan RigidBody2D tetapi tidak akan terpengaruh oleh gaya seperti gravitasi, dorongan, dan tabrakan.
 
 ### Ubah nilai atribut Mass pada tipe RigidBody2D secara bebas di scene BlueShip, lalu coba jalankan scene MainLevel. Apa yang terjadi?
+Tidak ada yang berubah sebenarnya object blueship menjadi lebih berat tetapi karena yang bergerak platformnya yang merupakan staticbody(tidak terpengaruh fisik) maka object akan terlihat sama saja.
 
 ### Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 Jika **Disabled** diaktifkan, StonePlatform tidak akan memiliki deteksi tabrakan, sehingga objek pesawat dapat melewatinya tanpa terhalang.
