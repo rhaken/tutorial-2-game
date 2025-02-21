@@ -2,14 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://y5a4e3ajuy2r" path="res://scenes/StonePlatform.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cqai8uiyxomhr" path="res://assets/bg_02_h.png" id="1_jmxf7"]
-[ext_resource type="PackedScene" uid="uid://datfp8kxjrjg" path="res://scenes/BlueShip.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://wbve4btqoi1t" path="res://scenes/GreenShip.tscn" id="3_yag1j"]
 [ext_resource type="Script" path="res://scenes/ObjectiveArea.gd" id="4"]
 [ext_resource type="Script" path="res://scenes/Ship.gd" id="4_cokwh"]
 [ext_resource type="Script" path="res://scenes/BatasLevel.gd" id="5_sulv6"]
 [ext_resource type="Texture2D" uid="uid://dv2fwqra3ksc2" path="res://assets/finish_lilne.png" id="6_b0x3q"]
 
 [sub_resource type="RectangleShape2D" id="1"]
-size = Vector2(138.75, 79)
+size = Vector2(78, 647)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_57k3e"]
 size = Vector2(1196, 20)
@@ -40,16 +40,16 @@ position = Vector2(35, 565)
 [node name="StonePlatform2" parent="PlatformBlue" instance=ExtResource("1")]
 position = Vector2(70, 0)
 
-[node name="BlueShip" parent="." instance=ExtResource("2")]
-position = Vector2(65, 478)
+[node name="GreenShip" parent="." instance=ExtResource("3_yag1j")]
+position = Vector2(68, 459)
 script = ExtResource("4_cokwh")
 
 [node name="ObjectiveArea" type="Area2D" parent="."]
-position = Vector2(3, 2)
+position = Vector2(1002, 514)
 script = ExtResource("4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectiveArea"]
-position = Vector2(70.625, 40)
+position = Vector2(101, -197.5)
 shape = SubResource("1")
 
 [node name="Image" type="TextureRect" parent="ObjectiveArea"]

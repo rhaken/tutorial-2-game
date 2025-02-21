@@ -13,3 +13,7 @@ func _process(delta):
 	
 	if Input.is_action_pressed("move_down"):
 		move_local_y(speed * delta, false)
+
+
+func _on_batas_level_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
