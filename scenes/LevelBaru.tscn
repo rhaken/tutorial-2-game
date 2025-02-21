@@ -1,11 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdoksexcakmop"]
+[gd_scene load_steps=14 format=3 uid="uid://cdoksexcakmop"]
 
 [ext_resource type="PackedScene" uid="uid://y5a4e3ajuy2r" path="res://scenes/StonePlatform.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cqai8uiyxomhr" path="res://assets/bg_02_h.png" id="1_jmxf7"]
+[ext_resource type="PackedScene" uid="uid://xxw78dkn86h0" path="res://scenes/SnowPlatform.tscn" id="2_hfelx"]
 [ext_resource type="PackedScene" uid="uid://wbve4btqoi1t" path="res://scenes/GreenShip.tscn" id="3_yag1j"]
-[ext_resource type="Script" path="res://scenes/ObjectiveArea.gd" id="4"]
 [ext_resource type="Script" path="res://scenes/Ship.gd" id="4_cokwh"]
 [ext_resource type="Script" path="res://scenes/BatasLevel.gd" id="5_sulv6"]
+[ext_resource type="Script" path="res://scenes/Tamat.gd" id="6_3qes7"]
 [ext_resource type="Texture2D" uid="uid://dv2fwqra3ksc2" path="res://assets/finish_lilne.png" id="6_b0x3q"]
 
 [sub_resource type="RectangleShape2D" id="1"]
@@ -32,6 +33,15 @@ offset_right = 1239.0
 offset_bottom = 698.0
 texture = ExtResource("1_jmxf7")
 
+[node name="SnowPlatform" parent="." instance=ExtResource("2_hfelx")]
+position = Vector2(423, 555)
+
+[node name="SnowPlatform2" parent="." instance=ExtResource("2_hfelx")]
+position = Vector2(427, 334)
+
+[node name="SnowPlatform3" parent="." instance=ExtResource("2_hfelx")]
+position = Vector2(434, 80)
+
 [node name="PlatformBlue" type="Node2D" parent="."]
 position = Vector2(35, 565)
 
@@ -46,7 +56,7 @@ script = ExtResource("4_cokwh")
 
 [node name="ObjectiveArea" type="Area2D" parent="."]
 position = Vector2(1002, 514)
-script = ExtResource("4")
+script = ExtResource("6_3qes7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectiveArea"]
 position = Vector2(101, -197.5)

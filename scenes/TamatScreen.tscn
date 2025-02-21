@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4erw03gglch5"]
+
+[ext_resource type="Texture2D" uid="uid://cqai8uiyxomhr" path="res://assets/bg_02_h.png" id="1_fy4e8"]
+
+[node name="TamatScreen" type="Node"]
+
+[node name="Backgorund" type="TextureRect" parent="."]
+offset_left = -94.0
+offset_top = -52.0
+offset_right = 1239.0
+offset_bottom = 698.0
+texture = ExtResource("1_fy4e8")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 323.0
+offset_top = 391.0
+offset_right = 733.0
+offset_bottom = 557.0
+text = "HORE TAMAT"
